@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="container my-3">
+
+ <div class="row justify-content-center">
+            <div class="col-md-6">
+                
+
+      <div class="card text-center" style="width: 18rem">
+        <div class="card-body">
+          <form>
+            <h3>Simple Calculator</h3>
+
+ <div class="col-auto">
+           <label for="value1">Value1:</label>
+            <input class="form-control form-inline my-3" type="number" id="value1" /><br />
+</div>
+<div class="col-auto">
+            <label for="value2">Value2:</label>
+             <input class="form-control my-3" type="number" id="value2" /><br />
+</div>
+            <label for="op">Operator</label>
+            <select id="operator" class="select">
+              <option value="add">Add</option>
+              <option value="min">Substract</option>
+              <option value="div">Divide</option>
+              <option value="mul">Multiply</option>
+            </select>
+            <button class="btn btn-dark"   type="button" onclick="calc()">calculate</button>
+          </form>
+
+          <!-- result -->
+           <div class="alert alert-warning my-3" id="result" role="alert"></div>
+        </div>
+
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
